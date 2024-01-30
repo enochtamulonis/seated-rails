@@ -1,0 +1,27 @@
+<div class="bg-gray-300 gap-4 p-4">
+  <p class="text-lg">
+    <%= location.name %>
+  </p>
+
+  <p class="text-lg">
+    <%= location.address %>
+  </p>
+
+  <p class="text-lg">
+    <%= location.table_limit %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Opens At:</strong>
+    <%= location.opening_time.strftime("%l:%M%p") %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Closes At:</strong>
+    <%= location.closing_time.strftime("%l:%M%p") %>
+  </p>
+
+  </br>
+
+  <%= link_to "Book Reservation", new_location_reservation_path(location), class: "bg-blue-500 text-blue-100 p-2 rounded-lg" %>
+</div>

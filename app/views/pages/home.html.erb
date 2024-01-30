@@ -1,0 +1,10 @@
+<div class="flex flex-col items-center w-full pt-16 bg-gradient-to-b from-indigo-500 to-blue-500 min-h-[100vh]">
+  <h1 class="font-bold text-6xl text-purple-200">Seated</h1>
+  <p class="text-lg text-gray-300">
+    Simple reservations for Restaurants on Rails 
+  </p>
+  <div class="flex items-center gap-4 mt-8">
+    <%= link_to "Sign in as customer", new_customer_session_path, class: "bg-blue-500 text-blue-50 p-2 rounded-lg" %>
+    <%= link_to "Sign in as owner", new_owner_session_path, class: "bg-blue-500 text-blue-50 p-2 rounded-lg" %>
+  </div>
+</div>

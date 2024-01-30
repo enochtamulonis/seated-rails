@@ -1,0 +1,10 @@
+<div class="px-4 pt-8">
+  <h1 class="text-5xl text-gray-700"> Your active reservations </h1>
+
+  <br/>
+  <div class="grid gap-4">
+    <% @reservations.each do |reservation| %>
+      <%= render "reservation", reservation: reservation %>
+    <% end %>
+  </div>
+</div>

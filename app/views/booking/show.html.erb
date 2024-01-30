@@ -1,0 +1,12 @@
+<div class="px-4 pt-8">
+  <h1 class="text-4xl"> Browse Restaurant Locations </h1>
+  <br/>
+  <div class="flex justify-end">
+    <%= link_to "view #{current_customer.reservations.count} reservations", active_reservations_path, class: "bg-purple-500 p-2 rounded-lg text-purple-100" %>
+  </div>
+  <div class="px-8 grid md:grid-cols-4 gap-4 mt-8">
+    <% @locations.each do |location| %>
+      <%= render "location", location: location %>
+    <% end %>
+  </div>
+</div>
